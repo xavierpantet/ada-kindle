@@ -1,7 +1,7 @@
 # Title
 
 # Abstract
-Amazon's' Kindle is the most popular e-reader on market right now. Since we have
+Amazon's' Kindle is the most popular e-reader on the market right now. Since we have
 access to the review datasets for the physical books sold on amazon and also for 
 the Kindle e-books, we want to know if the Kindle is better than an old school
 paper book. We will compare books consumers' behaviour depending on the medium 
