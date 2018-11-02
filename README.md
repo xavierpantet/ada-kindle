@@ -60,6 +60,7 @@ tools to be used to handle it efficiently.
 - Investigate the best metrics to answer properly the high level questions asked
 at the beginning i.e. how effective is the Kindle is it getting more consumer
 approval over time?
+- Investigate the LSI.
 
 # Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+Can we have our 6 right now or do we have to wait for the poster presentation?
