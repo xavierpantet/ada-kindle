@@ -62,5 +62,5 @@ at the beginning i.e. how effective is the Kindle is it getting more consumer
 approval over time?
 - Investigate the LSI.
 
-# Questions for TAa
-Can we have our 6 right now or do we have to wait for the poster presentation?
+# Questions for TA
+None for the moment.
