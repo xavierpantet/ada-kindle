@@ -3,14 +3,14 @@
 # Abstract
 Amazon's' Kindle is the most popular e-reader on the market right now. Since we have
 access to the review datasets for the physical books sold on amazon and also for 
-the Kindle e-books, we want to know if the Kindle is better than an old school
+the Kindle e-books, we want to know wheter the Kindle is better than an old school
 paper book. We will compare books consumers' behaviour depending on the medium 
 they're using to read the book. We would like to analyze the difference between 
 the two supports, the evolution of these, the shift or switch of users from a 
 form of reading to another. We would like to see what change of trends it
 induced with the consumers' relationship towards the reading experience.
 The biggest motivation is to determine if the Kindle's worth it. We want to know
-what is the best available reading experience.With the increasing digitalization 
+what is the best available reading experience. With the increasing digitalization 
 of the world that's been going for several decades, how has the very traditional 
 reading experience been affected?
 
@@ -60,6 +60,7 @@ tools to be used to handle it efficiently.
 - Investigate the best metrics to answer properly the high level questions asked
 at the beginning i.e. how effective is the Kindle is it getting more consumer
 approval over time?
+- Investigate the LSI.
 
-# Questions for TAa
-Add here some questions you have for us, in general or project-specific.
+# Questions for TA
+None for the moment.
