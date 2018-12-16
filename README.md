@@ -72,4 +72,5 @@ In order to conclude this analysis, we wish to know a little bit more what the r
 All plots and figures can be found in high resolution in the `figures/` folder.
 
 # TODO
-*[TBD]*
+- Etienne and Xavier are in charge of the poster prepartation
+- Damian will do the apple-style keynote presentation of the project
