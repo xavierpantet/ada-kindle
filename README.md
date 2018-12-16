@@ -19,7 +19,7 @@ The `ratings only` datasets contain, as their names suggest, only the ratings (i
 
 The biggest advantage of the way the datasets were built is that the `userID`s are consistent. Hence it makes possible to join on this field to compare habits of a same user regarding the two mediums. Unfortunately, the same reasoning is not possible to do with the products. Indeed, the digital book identification number (`ASIN`) is not the same as one corresponding to the physical version of it.
 
-At first glance, it appears that the datasets are in a standard and well-formed CSV or JSON format. Their sizes are very different, though: between 130MB and 18GB! In general, we think we will be able to handle them without too much difficulty, using appropriate tools (espcially Spark).
+At first glance, it appears that the datasets are in a standard and well-formed CSV or JSON format. Their sizes are very different, though: between 130MB and 18GB! In general, we think we will be able to handle them without too much difficulty, using appropriate tools (especially Spark).
 
 # Prior work
 For completeness, we wish to inform the reader that a similar project has already been realized in the previous edition of the course (denoted *[Lee, Jolles, Lemonato]* in the following):
@@ -34,20 +34,20 @@ However, although we seek to answer the same kind of questions, we are going to 
 
 # Part 1 - Quantitative analysis
 This part focuses on the evolution of numerical data in time. In particular, we direct the following questions:
-- __Does the Kindle appeals to new users?__
+- __Does the Kindle appeal to new users?__
 
-    We first wish to analyze the adoption rate of Kindle products since its introduction to the market, in 2008. How does the number of newcomers evolve over time? Has the adoption been quick, was it a flop?
+    We first wish to analyze the adoption rate of Kindle products since their introduction to the market, in 2008. How does the number of newcomers evolve over time? Has the adoption been quick, was it a flop?
 
 - __How do the reading habits of frequent users change in time?__
 
-    Once the Kindle got its pool of users, we wish to know whether newcomers are actually sticking to the Kindle, completely adopting it, or giving it up? Do people tend to choose *their* ultimate reading medium or do they continue using both, how does the Kindle adoption flow behaves?
+    Once the Kindle got its pool of users, we wish to know whether newcomers are actually sticking to the Kindle, completely adopting it, or giving it up? Do people tend to choose *their* ultimate reading medium or do they continue using both, how does the Kindle adoption flow behave?
 
-- __How the ratings of Kindle products evolve over time, compared to book ratings?__
+- __How do the ratings of Kindle products evolve over time, compared to book ratings?__
 
     Finally, since the Kindle is a new-tech product, it most likely had to evolve rather quickly since its launch. The high-tech market is known to expand rapidly, urging companies to adapt their products to stay competitive. In order to measure this phenomenon, we will analyze the evolution of the actual grade that Kindle users give to Kindle products. Do we notice a global increase of users satisfaction towards the product, or on the contrary, do people tend to like it less and less with the arrival of new reading alternatives?
 
 # Part 2 - Context-based analysis
-In order to conclude this analysis, we wish to know a little bit more what the reviews are actually about. To do so, we will use the larger datasets and natural language processing techniques to perform a more in-depth analysis of review texts. First, note that all reviews are going to be stemmed for better processing by NLP algorithms. Then, we will use LDA (Latent Dirichlet Allocation) to extract high-level topics from the corpus of reviews. This topic will be given to us as word distributions. We plan to take the most representative words of topics that might we might be interested in to perform a TF-IDF analysis that will give us a better understanding of the context of reviews. In particular, we hope to be table to extract a Kindle-specific topic that might contain words such as "screen", "battery", "layout", "format", etc...
+In order to conclude this analysis, we wish to know a little bit more what the reviews are actually about. To do so, we will use the larger datasets and natural language processing techniques to perform a more in-depth analysis of review texts. First, note that all reviews are going to be stemmed for better processing by NLP algorithms. Then, we will use LDA (Latent Dirichlet Allocation) to extract high-level topics from the corpus of reviews. These topics will be given to us as word distributions. We plan to take the most representative words of topics that we might be interested in to perform a TF-IDF analysis that will give us a better understanding of the context of reviews. In particular, we hope to be table to extract a Kindle-specific topic that might contain words such as "screen", "battery", "layout", "format", etc...
 
 # Who did what?
 - Project's guidelines have been widely discussed and set by all members of the group.
