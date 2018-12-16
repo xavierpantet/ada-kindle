@@ -47,13 +47,25 @@ This part focuses on the evolution of numerical data in time. In particular, we 
     Finally, since the Kindle is a new-tech product, it most likely had to evolve rather quickly since its launch. The high-tech market is known to expand rapidly, urging companies to adapt their products to stay competitive. In order to measure this phenomenon, we will analyze the evolution of the actual grade that Kindle users give to Kindle products. Do we notice a global increase of users satisfaction towards the product, or on the contrary, do people tend to like it less and less with the arrival of new reading alternatives?
 
 # Part 2 - Context-based analysis
-In order to conclude this analysis, we wish to know a little bit more what the reviews are actually about. To do so, we will use the larger datasets and natural language processing techniques to perform a more in-depth analysis of review texts. First, note that all reviews are going to be stemmed for better processing by NLP algorithms. Then, we will use LDA (Latent Dirichlet Allocation) to extract high-level topics from the corpus of reviews. These topics will be given to us as word distributions. We plan to take the most representative words of topics that we might be interested in to perform a TF-IDF analysis that will give us a better understanding of the context of reviews. In particular, we hope to be table to extract a Kindle-specific topic that might contain words such as "screen", "battery", "layout", "format", etc...
+In order to conclude this analysis, we wish to know a little bit more what the reviews are actually about. To do so, we will use the larger datasets and natural language processing techniques to perform a more in-depth analysis of review texts. First, note that all reviews are going to be stemmed for better processing by NLP algorithms. 
+
+- __Do the user talk about the Kindle e-book in their reviews or only of the stories they read ?__
+
+    To answer this first question, which is the starting point of this second part, we will use LDA (Latent Dirichlet Allocation) to extract high-level topics from the corpus of reviews. These topics will be given to us as word distributions. Among the expected topics related to a book genre, we were able to distinguish a technology-related topic, motivating the rest of the analysis. 
+    
+- __Which words define a technology-related review ?__
+    
+    To go on, we needed to extract the words defining the technology-related topic we discovered. For this, we used a variant of the TF-IDF algorithm, allowing us to remove the majority of the story-related words and keeping the ones that interested us. Finally we were able to write a list of words defining what a technology-related review will talk about and enabling us to filter the reviews and categorize them in two sets : technologic / non-technologic reviews.
+    
+- __Are the users positives on the technologic aspect of the Kindle ?__
+
+    Now that we are able to categorize our dataset into two subsets, we wish to known if the sentiment regarding the technologic aspect of the Kindle (the real difference with the ordinary paper-book) is generally better, worse or if their is no difference with the rest of the reviews. For this we run a sentiment analysis using Text-Blob which brought us to the conclusion that a tiny difference was distinguishable between the two subsets. However, this difference not being big enough, we wanted to make sure that it isn't only due to randomness. Hence we removed the dust from our statistic class to compute both the p-value per year and a t-test on the values we found. Both tests gave us the same result : there isn't a shadow of a doubt that the different distributions we observed are due to randomness. Hence we concluded that the users talk about the technologic aspect in a way which is a bit more pessimistic compared to usual reviews. However this has to be put in perspective with the fact that the sentiment analysis for this aspect is still positive.
 
 # Who did what?
 - Project's guidelines have been widely discussed and set by all members of the group.
-- Damian demonstrated his high-level SQL skills in `Part 1`.
-- Etienne is the master of disaster in word stemming and TF-IDF analysis.
-- Xavier's patience has been a great help in understanding `pyspark`'s API to use LDA methods.
+- Damian demonstrated his high-level SQL skills in `Part 1`. He was also responsible of the sentiment analysis and the computation of the t-value.
+- Etienne is the master of disaster in word stemming and TF-IDF analysis as well as in p-values computing.
+- Xavier's patience has been a great help in understanding `pyspark`'s API to use LDA methods in order to launch the second part of this analysis.
 - This project is kindly brought to you by the PMEA (Python MemoryError Association).
 
 # Plots & resources
